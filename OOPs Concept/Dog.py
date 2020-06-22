@@ -15,6 +15,14 @@ class Dog:
         self.name = name
         self.age = age
 
+    def description(self):
+        return "{} and {}".format(self.name, self.age)
+
+    def speak(self, sound):
+        return "{} says {}".format(self.name, sound)
+
 if __name__ == "__main__":
     a = Dog('Raje', '21')
     print(type(a))
+    print(a.description())
+    print(a.speak('gruf gruf'))
