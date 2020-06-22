@@ -21,8 +21,20 @@ class Dog:
     def speak(self, sound):
         return "{} says {}".format(self.name, sound)
 
+#creating a bunch of child classes. The breed classes inherit all properties of the parent Dog classes.
+class Labrador(Dog):
+    def color(self, color):
+       return "{} is golden".format(self.name, color)
+
+class Dalmation(Dog):
+    def color(self, color):
+        return "{} is of black and white mixed color".format(self.name, color)
+
 if __name__ == "__main__":
-    a = Dog('Raje', '21')
-    print(type(a))
-    print(a.description())
-    print(a.speak('gruf gruf'))
+    Raje = Dog('Raje', '21')
+    print(Raje.description())
+    print(Raje.speak('gruf gruf'))
+
+#an instance of the child class called Labrador
+    Rani = Labrador('Rani', 18)
+    print(Rani.description())
