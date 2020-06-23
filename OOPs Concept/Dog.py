@@ -38,3 +38,7 @@ if __name__ == "__main__":
 #an instance of the child class called Labrador
     Rani = Labrador('Rani', 18)
     print(Rani.description())
+
+#using isinstance() method to determine if a certain instance is also an instance of a parent class
+    print(isinstance(Rani, Dog))    #note that Rani is actually an instance of Labrador class, which is a child class of Dog class
+    print(isinstance(Raje, Dog))
