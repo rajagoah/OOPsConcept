@@ -30,6 +30,11 @@ class Dalmation(Dog):
     def color(self, color):
         return "{} is of black and white mixed color".format(self.name, color)
 
+#creating a class that overrides the attributes of parent class
+class SomeBreed(Dog):
+    species = 'reptile'
+
+
 if __name__ == "__main__":
     Raje = Dog('Raje', '21')
     print(Raje.description())
@@ -42,3 +47,7 @@ if __name__ == "__main__":
 #using isinstance() method to determine if a certain instance is also an instance of a parent class
     print(isinstance(Rani, Dog))    #note that Rani is actually an instance of Labrador class, which is a child class of Dog class
     print(isinstance(Raje, Dog))
+
+#creating an instance of SomeBreed() class, and displaying the value carried in the species attribute
+    Bonny = SomeBreed('Bonny', 2)
+    print(Bonny.species)
