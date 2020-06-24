@@ -5,8 +5,10 @@ class name:
         self.first_name = 'Aakarsh'
         self.__last_name = 'Rajagopalan'
 
+    #creating a private function
     def __CombiningFNLN(self):
-        return self.first_name + ' ' + self.__last_name
+        FN_LN = self.first_name + ' ' + self.__last_name
+        return FN_LN
 
     #defining a function to print first and last name
     def PrintName(self):
