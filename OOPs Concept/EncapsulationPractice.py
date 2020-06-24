@@ -5,9 +5,13 @@ class name:
         self.first_name = 'Aakarsh'
         self.__last_name = 'Rajagopalan'
 
+    def __CombiningFNLN(self):
+        return self.first_name + ' ' + self.__last_name
+
     #defining a function to print first and last name
     def PrintName(self):
         return '{} {} is the name of the person'.format(self.first_name, self.__last_name)
+
 
 if __name__ == "__main__":
     #declaring and intializing a variable of type name
@@ -30,3 +34,8 @@ if __name__ == "__main__":
         print(candidate1.__last_name)
     except AttributeError:
         print('the attribute __last_name doesnt exist')
+
+    try:
+        print(candidate1.__CombiningFNLN())
+    except AttributeError:
+        print('the attribute __CombiningFNLN doesnt exist')
